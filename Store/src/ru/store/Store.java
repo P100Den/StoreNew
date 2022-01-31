@@ -1,9 +1,15 @@
 package ru.store;
+import accesssystem.ServiceShop;
+import accesssystem.StaffShop;
 import goods.Alcohol;
 import sport.SportGoods;
 import staff1.Cashier;
 import staff1.Hostess;
 import staff1.ShopAssistant;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Store {
     public static void main(String[] args) {
 
@@ -73,6 +79,29 @@ public class Store {
             korzinaProductov1++;
             System.out.println(korzinaProductov1);
         } while (korzinaProductov3 < 2);
+
+
+
+        System.out.println("-----------------------------------------------------------------");
+
+        ServiceShop serviceShop = new ServiceShop();
+        int idNumber_1 = serviceShop.giveMeNumberId("откройте турникет","14524" );
+        int idNumber_2 = serviceShop.giveMeNumberId("откройте турникет","16814" );
+        int idNumber_3 = serviceShop.giveMeNumberId("откройте турникет","19344" );
+        int idNumber_4 = serviceShop.giveMeNumberId("откройте турникет","17314" );
+
+
+         List<StaffShop> staffShops = serviceShop.getStaffShops();
+         List<Integer>apass = serviceShop.getApass();
+         List<StaffShop>apassToStaffShop = serviceShop.getApassToStaffShop();
+
+         for (int i = 0; i< apassToStaffShop.size(); i++){
+             System.out.println("ApassId:" + i + "StaffShop:" + apassToStaffShop.get(i).toString());
+         }
+
+
+
+
 
        }
 
