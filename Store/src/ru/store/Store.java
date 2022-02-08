@@ -2,13 +2,16 @@ package ru.store;
 import accesssystem.ServiceShop;
 import accesssystem.StaffShop;
 import goods.Alcohol;
+import goods.Product;
+import product.*;
 import sport.SportGoods;
 import staff1.Cashier;
 import staff1.Hostess;
 import staff1.ShopAssistant;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Store {
     public static void main(String[] args) {
@@ -100,13 +103,21 @@ public class Store {
          }
 
 
+        System.out.println("-----------------------------------------------------------------");
 
+        Map<String, Product> map = new HashMap<>();
+        populateMap(map);
 
+        System.out.println(map.get("10"));
 
        }
 
-
-
-
+       public static void populateMap(Map<String, Product> map1){
+        map1.put("20", new Apple("Яблоко зеленое","Фрукты", 60));
+        map1.put("23", new Orange("Апельсин","Фрукты", 40));
+        map1.put("10", new Milk("Молоко простоквашино","Молочные продукты",54));
+        map1.put("40", new Chips("Чипсы лейс","Снэк",120));
+        map1.put("53", new Soda("Кока кола","Напиток",100));
+       }
 
 }

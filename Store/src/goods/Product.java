@@ -4,11 +4,13 @@ public class Product {
     public String name;
     public int price; // Soda = 80 Alcohol = 1500
     public  String item; // Soda.Alcohol
+    public String category;
 
     public Product() {
         this.name = name;
         this.price = price;
         this.item = item;
+        this.category = category;
     }
 
     public  void putOnTheShelf(){
@@ -28,7 +30,6 @@ public class Product {
         public void takeTheGoods(){
             System.out.println("Soda + Alcohol = 50%");
         }
-
 
     }
 
