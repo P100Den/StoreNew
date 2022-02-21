@@ -9,14 +9,24 @@ import staff1.Cashier;
 import staff1.Hostess;
 import staff1.ShopAssistant;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Store {
     public static void main(String[] args) {
 
         ProcessesStore myProcessesStore = new ProcessesStore();
+
+        System.out.println("Магазин открыт или закрыт?");
+        System.out.println("1. Больше или равно 8 утра ");
+        System.out.println("2. Больше или равно 22 вечера");
+        Scanner t = new Scanner(System.in);
+        int date1 = t.nextInt();
+        Date date = new Date();
+        if (date.getTime()>22){
+            System.out.println("Магазин закрыт");
+        }else if (date.getTime()>8){
+            System.out.println("Магазин открыт");
+        }
 
         ClassOfflineStore openStore = Build.buildOfflineStore();
 
@@ -119,5 +129,8 @@ public class Store {
         map1.put("40", new Chips("Чипсы лейс","Снэк",120));
         map1.put("53", new Soda("Кока кола","Напиток",100));
        }
+
+
+
 
 }

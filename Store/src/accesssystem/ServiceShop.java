@@ -7,7 +7,7 @@ public class ServiceShop {
 
     private final StaffShop STAFFSHOPS_1 = new StaffShop("Никита Абрамов", "14524", "продавец-консультант");
     private final StaffShop STAFFSHOPS_2 = new StaffShop("Дима Маслиников", "16814", "мерчендайзер");
-    private final StaffShop STAFFSHOPS_3 = new StaffShop("Александр Александрович", "19344", "хостесс");
+    private final StaffShop STAFFSHOPS_3 = new StaffShop("Александра Сергеевна", "19344", "хостесс");
     private final StaffShop STAFFSHOPS_4 = new StaffShop("Иван Попов", "17314", "доставщик");
     private final StaffShop STAFFSHOPS_5 = new StaffShop("Евгений Сидоров", "12974", "кассир ");
 

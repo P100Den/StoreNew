@@ -11,11 +11,10 @@ public class ClassOfflineStore {
         this.workHouse = workHouse;
     }
 
+
     public  void openStore(){
         System.out.println("Магазин был открыт");
-
     }
-
     public void theBuyerCame(){
         System.out.println("Пришел покупатель");
     }
