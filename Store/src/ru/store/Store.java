@@ -16,18 +16,6 @@ public class Store {
 
         ProcessesStore myProcessesStore = new ProcessesStore();
 
-        System.out.println("Магазин открыт или закрыт?");
-        System.out.println("1. Больше или равно 8 утра ");
-        System.out.println("2. Больше или равно 22 вечера");
-        Scanner t = new Scanner(System.in);
-        int date1 = t.nextInt();
-        Date date = new Date();
-        if (date.getTime()>22){
-            System.out.println("Магазин закрыт");
-        }else if (date.getTime()>8){
-            System.out.println("Магазин открыт");
-        }
-
         ClassOfflineStore openStore = Build.buildOfflineStore();
 
         myProcessesStore.printStaff();
@@ -118,16 +106,16 @@ public class Store {
         Map<String, Product> map = new HashMap<>();
         populateMap(map);
 
-        System.out.println(map.get("10"));
+        System.out.println(map.get("2014786"));
 
        }
 
        public static void populateMap(Map<String, Product> map1){
-        map1.put("20", new Apple("Яблоко зеленое","Фрукты", 60));
-        map1.put("23", new Orange("Апельсин","Фрукты", 40));
-        map1.put("10", new Milk("Молоко простоквашино","Молочные продукты",54));
-        map1.put("40", new Chips("Чипсы лейс","Снэк",120));
-        map1.put("53", new Soda("Кока кола","Напиток",100));
+        map1.put("2014786", new Apple(2014786,"Яблоко зеленое","Фрукты", 60));
+        map1.put("2334627", new Orange("Апельсин","Фрукты", 40));
+        map1.put("1042163", new Milk("Молоко простоквашино","Молочные продукты",54));
+        map1.put("4013452", new Chips("Чипсы лейс","Снэк",120));
+        map1.put("5374532", new Soda("Кока кола","Напиток",100));
        }
 
 
