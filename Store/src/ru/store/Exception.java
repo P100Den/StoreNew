@@ -1,5 +1,4 @@
 package ru.store;
-
 import java.util.Scanner;
 
 public class Exception {
@@ -9,9 +8,7 @@ public class Exception {
         System.out.println("Введите код товара");
         String productCode = sc.next();
         boolean codeNotOk = proccesProductCode(productCode);
-
         if (codeNotOk) {
-
             System.out.println("Введите категорию товара");
             String productCategory = sc.next();
             proccesproductCategory(productCategory);
