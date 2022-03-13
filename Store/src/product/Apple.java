@@ -27,4 +27,5 @@ public class Apple extends Product {
                 ", category='" + category + '\'' +
                 '}';
     }
+
 }
